@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercico-40°</title>
+    <link rel="stylesheet" href="ej40.css">
+</head>
+<body>
+    <div class="divPadre">
+        <h2>AutoCinema App</h2>
+        <form action="">
+            <div>
+                <h3>Seleccione su tipo vehiculo:</h3>
+                <select name="select" id="selectVehiculos">
+                    <option value="2">Vehiculo</option>
+                    <option value="3">Camioneta</option>
+                    <option value="4">Otro</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h3>Seleccione la cantidad de personas dentro del vehiculo</h3>
+                <h4>(menores de 8 años de edad no abonan entrada)</h4>
+                <select name="select" id="selectPersonas">
+                    <option value="1.50">1</option>
+                    <option value="3">2 </option>
+                    <option value="4.50">3</option>
+                    <option value="6">4</option>
+                    <option value="7.50">5</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <h3>Seleccione el metodo de pago</h3>
+                <select name="select" id="selectPago">
+                    <option value="Efectivo">Efectivo</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                </select>
+                <div id="cuotas"></div>
+                <div>
+                    <h3>Seleccione la comida</h3>
+                    <select name="select" id="selectComida">
+                        <option value="1.50">Hamburguesa completa</option>
+                        <option value="2">Lomito completo</option>
+                        <option value="2">Hamburguesa Zapping</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Seleccione la comida alternativa</h3>
+                    <select name="select" id="selectComidaAlternativa">
+                        <option value=""></option>
+                        <option value="0.50">Papas</option>
+                        <option value="1">Gaseosa</option>
+                        <option value="1.50">Gaseosa y Papas</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <input type="button" name="Aceptar" id="btnAceptar" value="Aceptar">
+            </div>
+            <div id="costoFinal"></div>
+        </form>
+    </div>
+    <script src="scprit.js"></script>
+</body>
+</html>
